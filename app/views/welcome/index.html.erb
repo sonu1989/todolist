@@ -1,0 +1,27 @@
+<div class="row">
+  <h3>ToDo List</h3>
+  <div class="col-md-12">
+    <%= link_to "New ToDo", new_todo_path, class: "btn btn-primary" %>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @todos.each do |todo| %>
+        <tr>
+          <td><%= todo.name %></td>
+          <td>
+            <%= link_to "Show", todo_path(todo), class: "btn btn-small btn-default" %>
+            <%= link_to "Edit", edit_todo_path(todo), class: "btn btn-small btn-default" %>  
+          </td>
+        </tr>
+      <% end %>  
+    </tbody>
+  </table>
+
+</div>

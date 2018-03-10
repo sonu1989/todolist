@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  todo_id: 1
+  title: MyString
+  state: 1
+
+two:
+  todo_id: 1
+  title: MyString
+  state: 1
